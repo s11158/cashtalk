@@ -560,3 +560,29 @@ footer { background: #050d09; color: #70877c; border-top: 1px solid #24352e; }
 }
 
 :focus-visible { outline: 3px solid #3ce08f; outline-offset: 4px; }
+
+/* ---------- tutorial ---------- */
+.tutorial-section .section-heading p { max-width: 640px; margin-left: auto; margin-right: auto; }
+.tutorial-grid { margin-top: 54px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+.tutorial-card { display: flex; flex-direction: column; padding: 26px; background: #fffdf6; border: 2px solid var(--ink); border-radius: 18px; box-shadow: 6px 6px 0 rgba(17,32,29,.14); }
+.tutorial-card.tut-new { position: relative; }
+.tutorial-card.tut-new::after { content: "новое"; position: absolute; top: -12px; right: 18px; padding: 4px 12px; background: var(--gold); border: 2px solid var(--ink); border-radius: 999px; font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.tutorial-card header { display: flex; align-items: baseline; gap: 12px; }
+.tut-num { font-family: var(--display); font-size: 14px; font-weight: 800; color: var(--mint-dark); }
+.tutorial-card h3 { margin: 0; font-family: var(--display); font-size: 20px; letter-spacing: -.02em; }
+.tut-lede { margin: 10px 0 18px; font-size: 14px; line-height: 1.6; color: #4a5752; }
+.tut-chat { margin-top: auto; display: flex; flex-direction: column; gap: 8px; padding: 16px; background: var(--ink); border-radius: 14px; }
+.tut-user, .tut-bot { max-width: 92%; padding: 9px 13px; border-radius: 12px; font-size: 13px; line-height: 1.45; }
+.tut-user { align-self: flex-end; background: var(--mint); color: var(--ink); border-bottom-right-radius: 4px; font-weight: 600; }
+.tut-bot { align-self: flex-start; background: #223731; color: var(--cream); border-bottom-left-radius: 4px; }
+.tut-bot small { opacity: .65; font-size: 11.5px; }
+.tut-bot.tut-total { background: var(--gold); color: var(--ink); font-weight: 800; }
+.tut-user code, .tut-bot code { font-family: inherit; }
+.tutorial-commands { margin-top: 60px; padding: 34px 36px; background: var(--ink); border-radius: 20px; color: var(--cream); }
+.tutorial-commands h3 { margin: 0 0 22px; font-family: var(--display); font-size: 24px; letter-spacing: -.02em; }
+.cmd-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px 28px; }
+.cmd-grid > div { display: flex; align-items: baseline; gap: 12px; padding: 10px 0; border-bottom: 1px solid rgba(255,244,220,.14); }
+.cmd-grid code { flex-shrink: 0; padding: 3px 10px; background: rgba(66,230,164,.14); color: var(--mint); border-radius: 7px; font-size: 13px; font-weight: 700; }
+.cmd-grid span { font-size: 13px; opacity: .82; }
+@media (max-width: 980px) { .tutorial-grid { grid-template-columns: repeat(2, 1fr); } .cmd-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .tutorial-grid, .cmd-grid { grid-template-columns: 1fr; } .tutorial-commands { padding: 26px 22px; } }

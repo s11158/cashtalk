@@ -23,6 +23,7 @@
     </a>
     <nav aria-label="Основная навигация">
       <a href="#how">Как работает</a>
+      <a href="#tutorial">Туториал</a>
       <a href="#features">Возможности</a>
       <a href="#compare">Сравнение</a>
       <a class="nav-cta" href="https://t.me/Cashtalk_ai_bot" target="_blank" rel="noopener"><svg class="telegram-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 18.65 10.06 14.42 17.74 7.5c.34-.3-.07-.45-.52-.18L7.74 13.3 3.65 12.02c-.89-.28-.91-.89.19-1.32L19.8 4.55c.74-.27 1.39.18 1.15 1.3l-2.72 12.8c-.2.91-.74 1.13-1.5.7l-4.14-3.06-2 1.93c-.22.22-.41.41-.81.41Z"/></svg>Запустить</a>
@@ -223,6 +224,125 @@
       </div>
     </section>
 
+    <section class="tutorial-section section" id="tutorial" aria-labelledby="tutorial-title">
+      <div class="section-heading">
+        <p class="eyebrow"><span></span> Наглядный туториал</p>
+        <h2 id="tutorial-title">Все возможности.<br>На живых примерах.</h2>
+        <p>Каждая карточка — реальный сценарий из чата. Скопируй фразу, отправь боту — получишь тот же результат.</p>
+      </div>
+
+      <div class="tutorial-grid">
+
+        <article class="tutorial-card">
+          <header><span class="tut-num">01</span><h3>🎤 Голос и живая речь</h3></header>
+          <p class="tut-lede">Сленг, «примерно», «вчера» — всё понимает. Одно голосовое — несколько записей.</p>
+          <div class="tut-chat">
+            <div class="tut-user">🎙 «вчера полтора косаря на продукты и пятихатка такси»</div>
+            <div class="tut-bot">➖ 1 500 AED · 🛒 Продукты · 💳<br><small>продукты · вчера</small></div>
+            <div class="tut-bot">➖ 500 AED · 🚕 Транспорт · 💳<br><small>такси · вчера</small></div>
+            <div class="tut-bot tut-total">Итого: 2 000 AED</div>
+          </div>
+        </article>
+
+        <article class="tutorial-card">
+          <header><span class="tut-num">02</span><h3>📸 Скриншоты и чеки</h3></header>
+          <p class="tut-lede">Скриншот перевода или фото чека — сумма, валюта и дата вытаскиваются сами. Дубль того же скриншота не запишется.</p>
+          <div class="tut-chat">
+            <div class="tut-user">🖼 [скриншот перевода 350 AED]</div>
+            <div class="tut-bot">➖ 350 AED · 💸 Прочее · 💳<br><small>перевод · сегодня</small></div>
+            <div class="tut-user">🖼 [тот же скриншот ещё раз]</div>
+            <div class="tut-bot">Этот скриншот уже записан, дубль не создаю ✋</div>
+          </div>
+        </article>
+
+        <article class="tutorial-card">
+          <header><span class="tut-num">03</span><h3>💵💳🪙 Счета и переводы</h3></header>
+          <p class="tut-lede">Наличные, карта и USDT — отдельные счета. Снятие в банкомате — перевод, а не трата.</p>
+          <div class="tut-chat">
+            <div class="tut-user">снял 1000 в банкомате, из них 300 на шаурму</div>
+            <div class="tut-bot">🔁 1 000 AED: 💳 карта → 💵 наличные</div>
+            <div class="tut-bot">➖ 300 AED · 🍔 Еда · 💵<br><small>шаурма · сегодня</small></div>
+          </div>
+        </article>
+
+        <article class="tutorial-card">
+          <header><span class="tut-num">04</span><h3>✏️ Поправки с полуслова</h3></header>
+          <p class="tut-lede">Ошибся — просто скажи. Под каждой записью есть кнопки отмены и смены категории, а на правках бот учится.</p>
+          <div class="tut-chat">
+            <div class="tut-user">кофе 45</div>
+            <div class="tut-bot">➖ 45 AED · 🍔 Еда · 💳</div>
+            <div class="tut-user">не 45 а 55</div>
+            <div class="tut-bot">✏️ Исправил: 55 AED · 🍔 Еда</div>
+          </div>
+        </article>
+
+        <article class="tutorial-card tut-new">
+          <header><span class="tut-num">05</span><h3>🎯 Бюджеты и лимиты</h3></header>
+          <p class="tut-lede">Поставь месячный лимит на категорию — бот предупредит на 80% и при превышении, прямо в момент траты.</p>
+          <div class="tut-chat">
+            <div class="tut-user">/budget Еда 2000</div>
+            <div class="tut-bot">🎯 Лимит «🍔 Еда»: 2 000 AED в месяц.</div>
+            <div class="tut-user">ужин 400</div>
+            <div class="tut-bot">➖ 400 AED · 🍔 Еда · 💳<br>⚠️ Бюджет «🍔 Еда»: 1 750 из 2 000 AED (88%)</div>
+          </div>
+        </article>
+
+        <article class="tutorial-card tut-new">
+          <header><span class="tut-num">06</span><h3>🔄 Регулярные платежи</h3></header>
+          <p class="tut-lede">Аренда, подписки, школа — запишутся сами в нужный день, с напоминанием в чат.</p>
+          <div class="tut-chat">
+            <div class="tut-user">/recur 1 аренда 5000</div>
+            <div class="tut-bot">🔄 Платёж #1: каждое 1-е — 5 000 AED · 🏠 Жильё · аренда<br><small>Буду записывать автоматически и напоминать.</small></div>
+            <div class="tut-bot"><small>1-го числа:</small><br>🔄 Записал регулярный платёж: 5 000 AED · 🏠 Жильё · аренда</div>
+          </div>
+        </article>
+
+        <article class="tutorial-card tut-new">
+          <header><span class="tut-num">07</span><h3>🌙 Вечерняя сводка</h3></header>
+          <p class="tut-lede">Включи — и каждый вечер в 21:00 бот пришлёт итог дня. Без запросов и открывания приложений.</p>
+          <div class="tut-chat">
+            <div class="tut-user">/digest</div>
+            <div class="tut-bot">🌙 Вечерняя сводка включена: каждый день в 21:00 пришлю итог дня.</div>
+            <div class="tut-bot"><small>21:00:</small><br>🌙 Итог дня:<br>📊 Сегодня — всего 285 AED<br>🍔 Еда: 185 AED (2)<br>🚕 Транспорт: 100 AED (1)</div>
+          </div>
+        </article>
+
+        <article class="tutorial-card tut-new">
+          <header><span class="tut-num">08</span><h3>📤 Экспорт в Excel</h3></header>
+          <p class="tut-lede">Одна команда — и вся история за год приходит CSV-файлом: открывается в Excel и Google Таблицах.</p>
+          <div class="tut-chat">
+            <div class="tut-user">/export</div>
+            <div class="tut-bot">📎 cashtalk_2026-07-22.csv<br><small>📤 Выгрузка за год: 347 записей</small></div>
+          </div>
+        </article>
+
+        <article class="tutorial-card">
+          <header><span class="tut-num">09</span><h3>💬 Вопросы и статистика</h3></header>
+          <p class="tut-lede">Спрашивай как человека — или командами. Сравнение с прошлым месяцем и разбивка по счетам — внутри.</p>
+          <div class="tut-chat">
+            <div class="tut-user">сколько я потратил за неделю?</div>
+            <div class="tut-bot">📊 Эта неделя — всего 1 240 AED<br>🍔 Еда: 520 AED (7) ↓12%<br>🚕 Транспорт: 380 AED (9) ↑5%<br><small>Оплачено: 💳 940 · 💵 300</small></div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="tutorial-commands">
+        <h3>Шпаргалка команд</h3>
+        <div class="cmd-grid">
+          <div><code>/stats</code><span>месяц по категориям, сравнение с прошлым</span></div>
+          <div><code>/week</code><span>итог недели</span></div>
+          <div><code>/last</code><span>последние записи</span></div>
+          <div><code>/undo</code><span>отменить последнюю</span></div>
+          <div><code>/balance</code><span>сальдо по счетам</span></div>
+          <div><code>/budget</code><span>лимиты по категориям</span></div>
+          <div><code>/recur</code><span>регулярные платежи</span></div>
+          <div><code>/digest</code><span>вечерняя сводка</span></div>
+          <div><code>/export</code><span>выгрузка CSV за год</span></div>
+        </div>
+      </div>
+    </section>
+
     <section class="features section" id="features">
       <div class="section-heading split-heading">
         <div>
@@ -276,6 +396,26 @@
           <span class="feature-symbol mascot-sticker sprite-emotions sticker-think" aria-hidden="true"></span>
           <h3>Не требует связи прямо сейчас</h3>
           <p>Telegram отправит накопленные сообщения после подключения, а бот их обработает.</p>
+        </article>
+        <article>
+          <span class="feature-symbol mascot-sticker sprite-benefits sticker-shield" aria-hidden="true"></span>
+          <h3>Следит за бюджетом</h3>
+          <p>Лимит на категорию — и предупреждение на 80% и при превышении, прямо в момент траты.</p>
+        </article>
+        <article>
+          <span class="feature-symbol mascot-sticker sprite-benefits sticker-clock" aria-hidden="true"></span>
+          <h3>Помнит регулярные платежи</h3>
+          <p>Аренда и подписки записываются сами в нужный день — с напоминанием в чат.</p>
+        </article>
+        <article>
+          <span class="feature-symbol mascot-sticker sprite-benefits sticker-chart" aria-hidden="true"></span>
+          <h3>Подводит итог вечером</h3>
+          <p>В 21:00 присылает сводку дня — траты, категории, сравнение. Включается одной командой.</p>
+        </article>
+        <article>
+          <span class="feature-symbol mascot-sticker sprite-money sticker-count" aria-hidden="true"></span>
+          <h3>Отдаёт данные в Excel</h3>
+          <p>/export — и вся история CSV-файлом. Твои данные — твои, без экспорт-подписок.</p>
         </article>
       </div>
     </section>
